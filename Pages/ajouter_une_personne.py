@@ -8,9 +8,9 @@ def main():
     # Database Connection
     try:
         con = sc.connect(
-            account='fcbzjch-ts19004',
-            user='ALISAAD1',
-            password='ALI123ali@'
+            account=st.secrets["snowflake"]["account"],
+            user=st.secrets["snowflake"]["user"],
+            password=st.secrets["snowflake"]["password"]
         )    
         cursor = con.cursor()
     except sc.Error as e:

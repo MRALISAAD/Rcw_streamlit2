@@ -1,1 +1,4 @@
 env
+
+# Secrets Streamlit
+.streamlit/secrets.toml
